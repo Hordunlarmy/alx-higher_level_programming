@@ -62,11 +62,11 @@ class Rectangle:
 
         string = ""
         for i in range(self.__height):
-            string += str(self.print_symbol)
             for j in range(self.__width):
-                string += "#"
-            string += "\n"
-        return (string[: -1])
+                string += str(self.print_symbol)
+            if (i < self.__height - 1):
+                string += '\n'
+        return (string)
 
     def __repr__(self):
         """Returns a string of an object of the rectangle"""
