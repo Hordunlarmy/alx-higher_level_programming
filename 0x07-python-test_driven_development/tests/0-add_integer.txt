@@ -1,0 +1,55 @@
+Test cases for 0-add_integer module
+===================================
+
+The 0-add_integer module takes two integers or floats as arguments and returns their sum
+
+Function Prototype
+==================
+
+add_integer(a, b=98)
+
+Usage
+=====
+
+Importing function from the module:
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Adding two positive integers
+    >>> add_integer(1, 2)
+    3
+
+Adding a positive integer and a negative integer
+    >>> add_integer(100, -2)
+    98
+
+Adding two integers where only first argument is passed(second is default)
+    >>> add_integer(2)
+    100
+
+Adding a float and a negative integer
+    >>> add_integer(100.3, -2)
+    98
+
+Adding a string and an integer(where first argument is the string)
+    >>> add_integer("School", 4)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+
+Adding an integer and a string(where second argument is the string)
+    >>> add_integer(4, "School")
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
+
+Passing no argument to the function
+    >>> add_integer(None)
+    Traceback (most recent call last):
+	      ...
+    TypeError: a must be an integer
+
+Passing three arguments to the function
+    >>> add_integer(1, 2, 3)
+    Traceback (most recent call last):
+	      ...
+    TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
