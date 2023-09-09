@@ -45,7 +45,7 @@ Test 4: Dividing matrix with a string
     ... [1, 2, 3],
     ... [4, 5, 6]
     ... ]
-    >>> print(matrix_divided(matrix, "3"))
+    >>> print(matrix_divided(matrix, "a"))
     Traceback (most recent call last):
     TypeError: div must be a number
 
@@ -56,4 +56,4 @@ Test 5: Dividing matrix with zero
     ... ]
     >>> print(matrix_divided(matrix, 0))
     Traceback (most recent call last):
-    TypeError: division by zero
+    ZeroDivisionError: division by zero
