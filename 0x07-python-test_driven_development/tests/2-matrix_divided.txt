@@ -1,0 +1,59 @@
+Test cases for 2-matrix_divided.py module
+===================================
+
+The 2-matrix_divided.py module divides all elements of a matrix
+
+Function Prototype
+==================
+
+matrix_divided(matrix, div)
+
+Usage
+=====
+
+Importing function from the module:
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Test 1: Dividing matrix(Lists of integers) with an integer:
+    >>> matrix = [
+    ... [1, 2, 3],
+    ... [4, 5, 6]
+    ... ]
+    >>> print(matrix_divided(matrix, 3))
+    [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+Test 2: Including a string in the matrix
+    >>> matrix = [
+    ... [1, 2, 3],
+    ... [4, "a", 6]
+    ... ]
+    >>> print(matrix_divided(matrix, 3))
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Test 3: Using matirx with different sizes
+    >>> matrix = [
+    ... [1, 2, 3, 4],
+    ... [5, 6, 7]
+    ... ]
+    >>> print(matrix_divided(matrix, 3))
+    Traceback (most recent call last):
+    TypeError: Each row of the matrix must have the same size
+
+Test 4: Dividing matrix with a string
+    >>> matrix = [
+    ... [1, 2, 3],
+    ... [4, 5, 6]
+    ... ]
+    >>> print(matrix_divided(matrix, "3"))
+    Traceback (most recent call last):
+    TypeError: div must be a number
+
+Test 5: Dividing matrix with zero
+    >>> matrix = [
+    ... [1, 2, 3],
+    ... [4, 5, 6]
+    ... ]
+    >>> print(matrix_divided(matrix, 0))
+    Traceback (most recent call last):
+    TypeError: division by zero
