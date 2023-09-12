@@ -1,4 +1,4 @@
-mporting the function from the module:
+Importing the function from the module:
         >>> BG = __import__("7-base_geometry").BaseGeometry
 
 Checking for module docstring:
