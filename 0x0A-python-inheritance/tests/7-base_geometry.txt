@@ -8,16 +8,19 @@ Importing the module
     >>> BaseG = __import__('7-base_geometry').BaseGeometry
 
 Checking for module docstring:
-    >>> mod = __import__('7-base_geometry')
-    >>> len(mod.__doc__) > 1
+    >>> m = __import__("7-base_geometry").__doc__
+    >>> len(m) > 1
     True
 
 Checking for class docstring:
-    >>> BaseG = mod.BaseGeometry
-    >>> len(BaseG.__doc__) > 1
+    >>> c = __import__("7-base_geometry").BaseGeometry.__doc__
+    >>> len(c) > 1
     True
 
 Checking for method docstring:
-    >>> print_sorted = BaseG.print_sorted
-    >>> len(print_sorted.__doc__) > 1
+    >>> mod1 = __import__("7-base_geometry").BaseGeometry.area.__doc__
+    >>> len(mod1) > 1
+	True
+	>>> mod2 = __import__("7-base_geometry").BaseGeometry.integer_validator.__doc__
+    >>> len(mod2) > 1
     True
