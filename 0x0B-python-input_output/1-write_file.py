@@ -12,4 +12,4 @@ def write_file(filename="", text=""):
         myFile.write(text)
 
     with open(filename) as myFile:
-        return len(myFile.readline())
+        return len(text)
