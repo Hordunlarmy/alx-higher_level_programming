@@ -94,6 +94,8 @@ class test_base(unittest.TestCase):
         '''
             Testing the json string
         '''
+        sq = Square(1, 0, 0, 609)
+        json_dict = sq.to_dictionary()
         json_string = Base.to_json_string(None)
         self.assertEqual(json_string, "[]")
 
@@ -101,6 +103,8 @@ class test_base(unittest.TestCase):
         '''
             Testing the json string
         '''
+        sq = Square(1, 0, 0, 609)
+        json_dict = sq.to_dictionary()
         json_string = Base.to_json_string([])
         self.assertEqual(json_string, "[]")
 
