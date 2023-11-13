@@ -10,9 +10,11 @@ if (argv.length <= 3) {
   let secondBiggest = 0;
 
   for (let i = 2; i < argLen; i++) {
-    while (biggest < argv[i]) {
+    const num = Number(argv[i]);
+
+    while (biggest < num) {
       secondBiggest = biggest;
-      biggest = argv[i];
+      biggest = num;
     }
   }
   console.log(secondBiggest);
