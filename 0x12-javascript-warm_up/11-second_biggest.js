@@ -12,9 +12,13 @@ if (argv.length <= 3) {
   for (let i = 2; i < argLen; i++) {
     const num = Number(argv[i]);
 
-    while (biggest < num) {
-      secondBiggest = biggest;
-      biggest = num;
+    if (!isNaN(num)) {
+      if (num > biggest) {
+        secondBiggest = biggest;
+        biggest = num;
+      } else if (num > secondBiggest && num !== biggest) {
+        secondBiggest = num;
+      }
     }
   }
   console.log(secondBiggest);
