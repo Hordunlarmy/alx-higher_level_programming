@@ -9,7 +9,7 @@ if (argv.length <= 3) {
   let biggest = 0;
   let secondBiggest = 0;
 
-  for (let i = 0; i < argLen; i++) {
+  for (let i = 2; i < argLen; i++) {
     while (biggest < argv[i]) {
       secondBiggest = biggest;
       biggest = argv[i];
