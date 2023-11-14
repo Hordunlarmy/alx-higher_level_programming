@@ -4,8 +4,7 @@
 
 exports.converter = function (base) {
   function myConverter (num) {
-    const baseNum = parseInt(num, base);
-    return baseNum;
+    return num.toString(base);
   }
 
   return myConverter;
