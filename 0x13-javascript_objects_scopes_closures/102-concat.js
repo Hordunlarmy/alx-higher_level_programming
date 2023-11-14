@@ -1,9 +1,10 @@
 #!/usr/bin/node
+// a script that concats 2 files.
+
 const fs = require('fs');
 
-const fileA = process.argv[2];
-const fileB = process.argv[3];
-const fileC = process.argv[4];
+const { argv } = process;
+const [fileA, fileB, fileC] = [argv[2], argv[3], argv[4]];
 
 if (
   fs.existsSync(fileA) &&
