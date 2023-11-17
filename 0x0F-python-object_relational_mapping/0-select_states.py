@@ -5,6 +5,9 @@ import MySQLdb
 import sys
 
 if __name__ == '__main__':
+    """
+    Connect to the database and retrieve data
+    """
 
     db = MySQLdb.connect(
         host="localhost",
