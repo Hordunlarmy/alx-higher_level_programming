@@ -1,1 +1,14 @@
-<picture> <source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/U9XgQeE.png"> <source media="(prefers-color-scheme: light)" srcset="https://i.imgur.com/U9XgQeE.png"> <img alt="README image" src="https://i.imgur.com/U9XgQeE.png"> </picture>
+<picture> <source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/SUmVDCm.jpg"> <source media="(prefers-color-scheme: light)" srcset="https://i.imgur.com/SUmVDCm.jpg"> <img alt="README image" src="https://i.imgur.com/SUmVDCm.jpg"> </picture>
+
+## RESOURCES
+
+* [JavaScript object basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
+* [Object-oriented JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript)
+* [Class - ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+* [super - ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super)
+* [extends - ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends)
+* [Object prototypes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)
+* [Inheritance in JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript)
+* [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+* [this/self](https://alistapart.com/article/getoutbindingsituations/)
+* [Modern JS](https://github.com/mbeaudru/modern-js-cheatsheet)
