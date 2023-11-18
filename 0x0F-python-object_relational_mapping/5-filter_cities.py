@@ -21,18 +21,14 @@ if __name__ == '__main__':
     )
 
     cursor = db.cursor()
-    cursor.execute("SELECT cities.name FROM cities JOIN states \
+    cursor.execute("SELECT cities.id, cities.name FROM cities JOIN states \
             ON cities.state_id=states.id WHERE states.name LIKE BINARY \
             %(name)s ORDER BY cities.id", {'name': sys.argv[4]})
 
     rows = cursor.fetchall()
 
-    for index, row in enumerate(rows):
-        row_str = ', '.join(str(col) for col in row)
-        print(row_str, end="")
-
-        if index < len(rows) - 1:
-            print(", ", end="")
+    if rows is not None:
+        print(", ".join([row[1] for row in rows]))
 
     cursor.close()
     db.close()
