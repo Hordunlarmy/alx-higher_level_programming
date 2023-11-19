@@ -14,3 +14,6 @@
 * [Python SQLAlchemy Cheatsheet](https://www.pythonsheets.com/notes/python-sqlalchemy.html)
 * [SQLAlchemy ORM Tutorial for Python Developers](https://auth0.com/blog/sqlalchemy-orm-tutorial-for-python-developers/)
 * [SQLAlchemy Tutorial](https://overiq.com/sqlalchemy-101/)
+
+* [SQLAlchemy ORM for beginners](https://www.youtube.com/watch?v=51RpDZKShiw&t=1434s)
+* [SQLALchemy ORM (Jerin Jose)](https://www.youtube.com/watch?v=jaKMm9njcJc&list=PL4iRawDSyRvVd1V7A45YtAGzDk6ljVPm1)
