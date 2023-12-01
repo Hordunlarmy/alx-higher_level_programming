@@ -5,6 +5,9 @@ a function that finds a peak in a list of unsorted integers.
 
 
 def find_peak(list_of_integers):
+    """
+    finds the peak using binary search
+    """
     left, right = 0, len(list_of_integers) - 1
 
     if len(list_of_integers) == 0:
