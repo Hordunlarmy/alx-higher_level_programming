@@ -9,7 +9,10 @@ if __name__ == "__main__":
     r = requests.get(
         f"https://api.github.com/repos/{sys.argv[1]}/{sys.argv[2]}/commits")
 
-    for i in range(1, 11):
-        sha = r.json()[i].get("sha")
-        commit = r.json()[i].get("commit").get("author").get("name")
-        print(f"{sha}: {commit}")
+    try:
+        for i in range(1, 11):
+            sha = r.json()[i].get("sha")
+            commit = r.json()[i].get("commit").get("author").get("name")
+            print(f"{sha}: {commit}")
+    except IndexError:
+        pass
