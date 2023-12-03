@@ -10,7 +10,7 @@ if __name__ == "__main__":
         f"https://api.github.com/repos/{sys.argv[1]}/{sys.argv[2]}/commits")
 
     try:
-        for i in range(1, 11):
+        for i in range(10):
             sha = r.json()[i].get("sha")
             commit = r.json()[i].get("commit").get("author").get("name")
             print(f"{sha}: {commit}")
